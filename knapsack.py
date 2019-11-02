@@ -25,12 +25,7 @@ def findBestObjects (object_list, weight):
   if len(object_list) == 2:
     obj1 = object_list[0]
     obj2 = object_list[1]
-    print("weight limit")
-    print (weight)
-    print ("obj1 weight")
-    print (obj1.weight)
-    print("obj1 value")
-    print(obj1.value)
+
     if (obj1.weight + obj2.weight <= weight):
       return (object_list, obj1.value + obj2.value)
     elif (obj1.weight <= weight and obj2.weight <= weight):
